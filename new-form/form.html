@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pushbar.css">
+    <script src="js/call.js"></script>
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <header class="form_headear">
+        <h1>Ministerio de recaudacion Cedula</h1>
+        <img src="" alt="">
+        <button class="button-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="caja">
+            <form action="formcedu.php" method="post">
+            
+                <ul>
+                    <li>
+                        <label for="id_ce" class="llenar">ID:</label>
+                        <input type="number" name="cedula" id="id_ce" placeholder="cedula" required>
+                    </li>
+                    <li>
+                        <label for="name" class="llenar">Nombre:</label>
+                        <input type="text" name="user_name_nom" id="name" placeholder="nombre" required>
+                    </li>
+                    <li>
+                        <label for="apellido" class="llenar">apellido:</label>
+                        <input type="text" name="apellido" id="name" placeholder="apellido" required>
+                    </li>
+                    <li>
+                        <label for="lugar_nac" class="llenar">Lugar de
+                            nacimiento:</label>
+                        <input type="text" name="naci" id="lugar_nac" placeholder="lugar nacimiento" required>
+                    </li>
+                    <li>
+                        <label for="nacionalidad" class="llenar">Nacionalidad:</label>
+                        <input type="text" name="nacion" id="nacionalidad" placeholder="nacionalidad" required>
+                    </li>
+                    <li>
+                        <label for="ocup" class="llenar">Ocupacion:</label>
+                        <input type="text" name="ocupac" id="ocup" placeholder="Ocupacion" required>
+                    </li>
+                    <li>
+                        <label for="name" class="llenar">Fecha de nacimiento</label>
+                        <input type="date" name="nacim" id="name" required>
+                    </li>
+                    <li>
+                        <label for="estad" class="llenar">Estado civil</label>
+                        <input type="text" name="user_name" id="name" placeholder="estado civil" required>
+                    </li>
+
+
+                </ul>
+
+                <label for="" class="opt">Tipo de sangre:</label>
+                <select name="select_sangre" id="">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="" class="opt">Sexo</label>
+                <select name="select_s" id="">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+                <button onclick="registro()" id="bottom"></button>
+
+
+            </form>
+        </section>
+        <div class="mapa">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=junta%20celtral%20electoral&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://123movies-to.org">123movies</a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">how to add
+                        google map to website</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy Dominic-GF</p>
+    </footer>
+
+</body>
+
+</html>
